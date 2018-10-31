@@ -1,0 +1,16 @@
+{
+	"serverUrl": "http://localhost:8080/",
+	"httpPort": 8080,
+	"interfaces": [
+		{
+			"name": "RawData",
+			"path": "../lib/interfaces/RawData",
+			"websocket": false,
+			"wsPort": 3001,
+			"fragmentsPath": "../../timeseries-server/observer/data/RawData",
+			"staticTriples": "../../timeseries-server/rawdata_static_observer.trig",
+			"maxFileSize": 100000,
+			"latestWindowsize": 10
+		}
+	]
+}

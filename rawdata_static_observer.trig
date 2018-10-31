@@ -1,0 +1,132 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-thes: <http://purl.org/iso25964/skos-thes#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix otl: <https://w3id.org/opentrafficlights#> .
+
+_:lane6 a otl:Lane ;
+			<http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)"^^xsd:string ;
+			<http://dbpedia.org/ontology/width> "100" ;
+			dcterms:description "Volkstraat" .
+
+_:connection11 a otl:Connection ;
+				otl:departureLane _:lane6 ;
+				otl:arrivalLane _:lane11 ;
+				otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
+
+_:lane11  a otl:Lane ;
+			<http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122440 4.3973510, 51.2126980 4.3975804)"^^xsd:string ;
+			<http://dbpedia.org/ontology/width> "100" ;
+			dcterms:description "Nationalestraat" .
+
+<https://opentrafficlights.org/id/signalgroup/K648/1> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/2> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/3> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/4> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/5> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/6> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/7> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/8> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+<https://opentrafficlights.org/id/signalgroup/K648/9> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase> a skos:ConceptScheme ;
+    dcterms:identifier "SIGNAL PHASE" ;
+    skos:hasTopConcept <https://w3id.org/opentrafficlights/thesauri/signalphase/0>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/1>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/2>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/3>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/4>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/5>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/6>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/7>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/8>,
+    <https://w3id.org/opentrafficlights/thesauri/signalphase/9> ;
+    skos:prefLabel "Signal phase"@en,
+        "Signaal fase"@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/0> a skos:Concept ;
+    dcterms:identifier 0 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Unavailable"@en ;
+    skos:prefLabel "Niet beschikbaar"@nl ;
+    skos:note "This phase is used for unknown or error."@en ;
+    skos:note "Duidt aan dat er een probleem is gedetecteerd of de fase is onbekend."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/1> a skos:Concept ;
+    dcterms:identifier 1 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Unlit (DARK)"@en ;
+    skos:prefLabel "Onverlicht (DONKER)"@en ;
+    skos:note "Stop vehicle at stop line. Do not proceed until it's safe."@en ;
+    skos:note "Stop het voertuig aan de stoplijn. Wacht tot het veilig is."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/2> a skos:Concept ;
+    dcterms:identifier 2 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Stop Then Proceed (flashing)"@en ;
+    skos:prefLabel "Stop-dan-verdergaan (knipperlicht)"@nl ;
+    skos:note "Stop vehicle at stop line. Do not proceed until it's safe."@en ;
+    skos:note "Stop het voertuig aan de stoplijn. Wacht tot het veilig is."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/3> a skos:Concept ;
+    dcterms:identifier 3 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Stop And Remain"@en ;
+    skos:prefLabel "Stop-En-Wacht"@nl ;
+    skos:note "Stop vehicle at stop line. Do not proceed."@en ;
+    skos:note "Stop het voertuig aan de stoplijn. Wacht."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/4> a skos:Concept ;
+    dcterms:identifier 4 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Pre-Movement"@en ;
+    skos:prefLabel "Voor-vertrek"@nl ;
+    skos:note "Stop vehicle. Prepare to proceed."@en ;
+    skos:note "Stop het voertuig. Maak klaar om te vertrekken."@nl ;
+    skos:note "Stop het voertuig. Maak klaar om te vertrekken."@nl ;
+    skos:editorialNote "Used in the European Union."@en ;
+    skos:editorialNote "Van toepassing in Europese Unie."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/5> a skos:Concept ;
+    dcterms:identifier 5 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Permissive Movement Allowed"@en ;
+    skos:prefLabel "Verdergaan is toegelaten onder voorwaarden."@nl ;
+    skos:note "Proceed with caution. Must yield to all conflicting traffic."@en ;
+    skos:note "Ga verder onder voorwaarde dat voorrang gegeven wordt bij conflict."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/6> a skos:Concept ;
+    dcterms:identifier 6 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Protected Movement Allowed"@en ;
+    skos:prefLabel "Ga verder met voorrang-garantie."@nl ;
+    skos:note "Proceed in direction indicated."@en ;
+    skos:note "Ga verder in de aangeduide richting."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/7> a skos:Concept ;
+    dcterms:identifier 7 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Permissive Clearance"@en ;
+    skos:prefLabel "Kruispunt vrijmaken zonder voorrang."@nl ;
+    skos:note "Prepare to stop. Proceed if unable to stop. Conflicting traffic may be present."@en ;
+    skos:note "Stop indien mogelijk. Anders maak kruispunt vrij. Conflicterend verkeer kan aanwezig zijn."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/8> a skos:Concept ;
+    dcterms:identifier 8 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Protected Clearance"@en ;
+    skos:prefLabel "Kruispunt vrijmaken met voorrang-garantie."@nl ;
+    skos:note "Prepare to stop. Proceed if unable to stop in direction indicated."@en ;
+    skos:note "Stop indien mogelijk. Anders maak kruispunt vrij."@nl .
+
+<https://w3id.org/opentrafficlights/thesauri/signalphase/9> a skos:Concept ;
+    dcterms:identifier 9 ;
+    skos:inScheme <https://w3id.org/opentrafficlights/thesauri/signalphase> ;
+    skos:prefLabel "Caution Conflicting Traffic (Flashing)"@en ;
+    skos:prefLabel "Pas op voor conflicterend verkeer."@nl ;
+    skos:note "Proceed with caution. Conflicting traffic may be present at intersection conflict area."@en ;
+    skos:note "Ga opgelet verder. Mogelijk is er conflicterend verkeer op het kruispunt."@nl .
