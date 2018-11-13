@@ -8,6 +8,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix otl: <https://w3id.org/opentrafficlights#> .
 
+<https://lodi.ilabt.imec.be/opentrafficlights/rawdata#Dataset> <http://www.w3.org/2000/01/rdf-schema#type> <http://rdfs.org/ns/void#Dataset> ;
+<http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Signal_timing> ;
+<http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Traffic_light> .
+
 _:lane6 a otl:Lane ;
 			<http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)"^^xsd:string ;
 			<http://dbpedia.org/ontology/width> "100" ;
