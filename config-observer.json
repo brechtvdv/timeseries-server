@@ -3,7 +3,7 @@
 	"httpPort": 8081,
 	"interfaces": [
 		{
-			"name": "RawData",
+			"name": "rawdata",
 			"path": "../lib/interfaces/RawData",
 			"websocket": false,
 			"wsPort": 3001,
