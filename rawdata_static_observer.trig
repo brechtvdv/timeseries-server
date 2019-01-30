@@ -12,20 +12,161 @@
 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Signal_timing> ;
 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Traffic_light> .
 
-_:lane6 a otl:Lane ;
-			<http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)"^^xsd:string ;
-			<http://dbpedia.org/ontology/width> "100" ;
-			dcterms:description "Volkstraat" .
+_:connection1 a otl:Connection ;
+                otl:departureLane _:lane1 ;
+                otl:arrivalLane _:lane11 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/6> .
+
+_:connection2 a otl:Connection ;
+                otl:departureLane _:lane2 ;
+                otl:arrivalLane _:lane9 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7> .
+                
+_:connection3 a otl:Connection ;
+                otl:departureLane _:lane2 ;
+                otl:arrivalLane _:lane7 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7> .
+
+_:connection4 a otl:Connection ;
+                otl:departureLane _:lane2 ;
+                otl:arrivalLane _:lane5 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/7> .
+
+_:connection5 a otl:Connection ;
+                otl:departureLane _:lane8 ;
+                otl:arrivalLane _:lane3 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5> .
+                
+_:connection6 a otl:Connection ;
+                otl:departureLane _:lane8 ;
+                otl:arrivalLane _:lane5 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5> .
+
+_:connection7 a otl:Connection ;
+                otl:departureLane _:lane8 ;
+                otl:arrivalLane _:lane7 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5> .
+
+_:connection8 a otl:Connection ;
+                otl:departureLane _:lane8 ;
+                otl:arrivalLane _:lane11 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/5> .
+
+_:connection9 a otl:Connection ;
+                otl:departureLane _:lane6 ;
+                otl:arrivalLane _:lane5 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
+
+_:connection10 a otl:Connection ;
+                otl:departureLane _:lane6 ;
+                otl:arrivalLane _:lane3 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
 
 _:connection11 a otl:Connection ;
-				otl:departureLane _:lane6 ;
-				otl:arrivalLane _:lane11 ;
-				otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
+                otl:departureLane _:lane6 ;
+                otl:arrivalLane _:lane11 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
+
+_:connection12 a otl:Connection ;
+                otl:departureLane _:lane6 ;
+                otl:arrivalLane _:lane9 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/4> .
+                
+_:connection13 a otl:Connection ;
+                otl:departureLane _:lane4 ;
+                otl:arrivalLane _:lane3 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3> .
+
+_:connection14 a otl:Connection ;
+                otl:departureLane _:lane4 ;
+                otl:arrivalLane _:lane11 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3> .
+
+_:connection15 a otl:Connection ;
+                otl:departureLane _:lane4 ;
+                otl:arrivalLane _:lane9 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3> .
+
+_:connection16 a otl:Connection ;
+                otl:departureLane _:lane4 ;
+                otl:arrivalLane _:lane7 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/3> .
+
+_:connection17 a otl:Connection ;
+                otl:departureLane _:lane10 ;
+                otl:arrivalLane _:lane3 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1> .
+
+_:connection18 a otl:Connection ;
+                otl:departureLane _:lane10 ;
+                otl:arrivalLane _:lane5 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1> .
+
+_:connection19 a otl:Connection ;
+                otl:departureLane _:lane10 ;
+                otl:arrivalLane _:lane7 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1> .
+
+_:connection20 a otl:Connection ;
+                otl:departureLane _:lane10 ;
+                otl:arrivalLane _:lane9 ;
+                otl:signalGroup <https://opentrafficlights.org/id/signalgroup/K648/1> .
+
+_:lane1 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120579 4.3974731, 51.2118214 4.3991321)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Kronenburgstraat (> nr. 48)" .
+
+_:lane2 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120361 4.3974671, 51.2120058 4.3976971, 51.2120184 4.3977501)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Kronenburgstraat (> nr. 48)" .
+
+_:lane3 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Volkstraat" .
+
+_:lane4 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2117840 4.3972854, 51.2107036 4.3974678)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Geuzenstraat" .
+
+
+_:lane5 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2117896 4.3972204, 51.2114204 4.3973075, 51.2106996 4.3974309)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Geuzenstraat" .
+
+_:lane6 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118379 4.3970829, 51.2111054 4.3961904)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Volkstraat" .
+
+_:lane7 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2118758 4.3970172, 51.2111339 4.3961220)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Volkstraat" .
+
+_:lane8 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2120563 4.3969880, 51.2121071 4.3965394, 51.2123772 4.3942387)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Kronenburgstraat (< nr. 48)" .
+
+_:lane9 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2121009 4.3969997, 51.2124223 4.3942465)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Kronenburgstraat (< nr. 48)" .
+
+_:lane10 a otl:Lane ;
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122527 4.3973091, 51.2127026 4.3975384)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Nationalestraat" .
 
 _:lane11  a otl:Lane ;
-			<http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122440 4.3973510, 51.2126980 4.3975804)"^^xsd:string ;
-			<http://dbpedia.org/ontology/width> "100" ;
-			dcterms:description "Nationalestraat" .
+            <http://www.opengis.net/#geosparql/wktLiteral> "LINESTRING (51.2122440 4.3973510, 51.2126980 4.3975804)"^^xsd:string ;
+            <http://dbpedia.org/ontology/width> "100" ;
+            dcterms:description "Nationalestraat" .
 
 <https://opentrafficlights.org/id/signalgroup/K648/1> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
 <https://opentrafficlights.org/id/signalgroup/K648/2> <http://www.w3.org/2000/01/rdf-schema#type> <https://w3id.org/opentrafficlights#Signalgroup> .
